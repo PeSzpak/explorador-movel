@@ -1,5 +1,7 @@
 # Aula 07: Explorador Móvel
 
+Disciplina **Tecnologias Móveis e Híbridas** (ADS, Senac São José dos Pinhais). Os demais exercícios da matéria estão em [flutter-class](https://github.com/PeSzpak/flutter-class).
+
 App com três abas que usam recursos nativos do celular:
 
 | Aba | O que faz | Pacote |
@@ -13,6 +15,8 @@ App com três abas que usam recursos nativos do celular:
 **Filtro de leituras ruins (velocidade):** descarta leituras com precisão pior que 25 m, com o mesmo horário da anterior ou que dariam mais de 250 km/h (salto de GPS). A regra fica em `lib/velocidade.dart` e é testada sem GPS em `test/widget_test.dart`, inclusive com o exemplo do slide: 100 m em 20 s = 18 km/h.
 
 **Recursos liberados:** cada aba é criada quando é aberta; ao trocar de aba, o `CameraController` e a assinatura do GPS são encerrados no `dispose()`.
+
+**APK release:** [v1.0.0](https://github.com/PeSzpak/explorador-movel/releases/tag/v1.0.0). Foi gerado sem a chave do Maps, então o mapa aparece cinza.
 
 ## Chave do Google Maps
 
